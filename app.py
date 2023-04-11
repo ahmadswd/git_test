@@ -11,6 +11,6 @@ def clean_df(df):
     return df
 
 def remove_dub(df):
-    df = df.drop_duplicates()
-
+    df = df.drop_duplicates(subset=["name"])
+    print("Drop just the name")
     return df
